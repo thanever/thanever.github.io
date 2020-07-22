@@ -1,0 +1,104 @@
+---
+layout: default
+title: Tong Han
+picture: inchcolm
+---
+<div class="page-header">
+  <div class="row">
+    <div class="col-sm-12">
+      <h3>Tong Han</h3>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-6">
+      <address>
+        PhD Candidate</a><br/>
+        <a href="https://www.eee.hku.hk/" target="_blank">Department of Electrical and Electronic Engineering</a><br/>
+        <a href="https://engg.hku.hk/" target="_blank">Faculty of Engineering</a><br/>
+        <a href="https://www.hku.hk/" target="_blank">The University of Hong Kong</a><br/>
+      </address>
+    </div>
+    <div class="col-sm-4">
+      <a href="mailto:hantong.eee@gmail.com" target="_blank"><span class="glyphicon glyphicon-envelope"></span></a> hantong.eee@gmail.com<br/>
+      <a href="https://scholar.google.com/citations?user=M9TbYjgAAAAJ&hl" target="_blank">
+        <img src="img/ico/gs.png" alt=""/>
+      </a> Google Scholar<br/>
+      <a href="https://www.researchgate.net/profile/Tong_Han4" target="_blank">
+        <img src="img/ico/rg.png" alt=""/>
+      </a> ResearchGate<br/>
+      <a href="https://github.com/thanever" target="_blank">
+        <img src="img/ico/github_icon.png" alt=""/>
+      </a> Github
+    </div>	
+	<div class="col-sm-2">
+       <img src="img/nav/hku-logo.jpg" alt="" height="80" width="80"/>
+    </div>
+  </div>
+<p>
+I am a PhD candidate in the Department of Electrical and Electronic Engineering at the Univeristy of Hong Kong, supervised by <a href="https://www.eee.hku.hk/people/dhill/" target="_blank">Prof. David J. Hill</a> and <a href="https://www.eee.hku.hk/~yhhou/index.htm" target="_blank">Dr. Yunhe Hou</a>. I received my bachelor's degree and master's degree both in Power System and its Automation, in 2015 and 2018 respectively, from North China Elecric Power University. My research lies in analysis, optimization and control of power systems. And I mainly focus on structure-oriented methonds for power system analysis, optimization and control during my PhD period.
+</p>
+</div>
+
+
+
+
+
+  <p>
+  <h4>Recent Updates</h4>
+   
+    <table style="border-spacing: 0 10px; ">
+      
+      <tr bgcolor="#F5F5F5"><td style="width:80px; "> 
+          May 2018
+          </td> <td> 
+            I received the PhD offer from the University of Hong Kong.
+      </td></tr>
+	  
+      <tr><td style="width:80px; "> 
+          Mar 2018
+          </td> <td> 
+            I was conferred the Master’s Degree of Engineering in Power System and its Automation from North China Elecric Power University.
+      </td></tr>
+	  
+      <tr bgcolor="#F5F5F5"><td style="width:80px; "> 
+          Mar 2018
+          </td> <td> 
+            I wrote a thesis!
+      </td></tr>
+
+      <tr><td style="width:80px; "> 
+          Jan 2018
+          </td> <td> 
+            Our paper of <a href="papers/igtd-2018.pdf" target="blank">"Multi-objective Robust Dynamic VAR Planning in Power Transmission Girds for Improving Short-term Voltage Stability under Uncertainties"</a> has been accepted to IET Generation, Transmission & Distribution.
+      </td></tr>
+	  
+      <tr bgcolor="#F5F5F5"><td style="width:80px; "> 
+          Nov 2017
+          </td> <td> 
+            Our paper of <a href="papers/ei2-2017.pdf" target="blank">"Robust Optimal Protection Strategy Against False Data Injection Attacks in Power Grids"</a> has been accepted to EI<sup>2</sup> 2017.
+      </td></tr>
+ 
+      <tr><td style="width:80px; "> 
+          Jul 2017
+          </td> <td> 
+            Our paper of <a href="papers/iecon-2017.pdf" target="blank">"Total Transfer Capability of Meshed Transmission Grids with VSC-HVDC Considering Control Parameter Uncertainties: Concept and Calculation"</a> has been accepted to IECON 2017.
+      </td></tr>
+
+      <tr bgcolor="#F5F5F5"><td style="width:80px; "> 
+          Apr 2017
+          </td> <td> 
+            Our paper of <a href="papers/itps-2018.pdf" target="blank">"Surrogate Modeling Based Multi-objective Dynamic VAR Planning Considering Short-term Voltage Stability and Transient Stability"</a> has been accepted to IEEE Transactions on Power Systems.
+      </td></tr>
+
+    </table>
+   <br />
+
+
+
+{% for post in site.papers %}
+  {% if post.selected %}
+    {% include paper.html paper=post %}
+  {% endif %}
+{% endfor %}
+
+
